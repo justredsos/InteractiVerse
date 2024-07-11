@@ -1,7 +1,8 @@
 import { Box, Button, Flex, Image, Link, Tooltip } from "@chakra-ui/react";
 import { Link as RouterLink } from "react-router-dom";
 import { InstagramLogo, InstagramMobileLogo } from "../../assets/constants";
-
+import logo from '../../../public/logo.png'
+import homelogo from '../../../public/homelogo.png'
 import { BiLogOut } from "react-icons/bi";
 import useLogout from "../../hooks/useLogout";
 import SidebarItems from "./SidebarItems";
@@ -21,7 +22,7 @@ const Sidebar = () => {
 		>
 			<Flex direction={"column"} gap={10} w='full' height={"full"}>
 				<Link to={"/"} as={RouterLink} pl={2} display={{ base: "none", md: "block" }} cursor='pointer'>
-					<Image src="../public/logo.png" />
+					<Image src={logo} />
 				</Link>
 				<Link
 					to={"/"}
@@ -35,7 +36,7 @@ const Sidebar = () => {
 					w={10}
 					cursor='pointer'
 				>
-					<Image src="../public/homelogo.png" />
+					<Image src={homelogo} />
 				</Link>
 				<Flex direction={"column"} gap={5} cursor={"pointer"}>
 					<SidebarItems />
