@@ -35,7 +35,7 @@ const Sidebar = () => {
 					w={10}
 					cursor='pointer'
 				>
-					<Image src="../public/homelogo.jpg" />
+					<Image src="../public/homelogo.png" />
 				</Link>
 				<Flex direction={"column"} gap={5} cursor={"pointer"}>
 					<SidebarItems />
